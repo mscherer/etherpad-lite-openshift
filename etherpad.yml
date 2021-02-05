@@ -320,3 +320,6 @@ parameters:
   required: true
   value: "Welcome to a random Etherpad on Openshift"
 
+- displayName: Etherpad Domain
+  name: APPLICATION_DOMAIN
+  value: ''
