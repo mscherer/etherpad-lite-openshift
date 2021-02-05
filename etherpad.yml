@@ -59,6 +59,20 @@ objects:
     annotations:
       description: Keeps track of changes in the application image
     name: ${NAME}
+  spec:
+    lookupPolicy:
+      local: false
+    tags:
+    - annotations: null
+      from:
+        kind: DockerImage
+        name: docker.io/etherpad/etherpad
+      generation: 2
+      importPolicy:
+        scheduled: true
+      name: latest
+      referencePolicy:
+        type: Source
 
 - apiVersion: v1
   kind: DeploymentConfig
@@ -118,7 +132,7 @@ objects:
               secretKeyRef:
                 key: etherpad-lite-admin-password
                 name: ${NAME}
-          image: docker.io/etherpad/etherpad
+          image: ''
           livenessProbe:
             httpGet:
               path: /
