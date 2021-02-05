@@ -104,9 +104,9 @@ objects:
           - name: DB_TYPE
             value: 'postgres'
           - name: DB_PORT
-            value: ${POSTGRESQL_SERVICE_HOST}
+            value: $(POSTGRESQL_SERVICE_PORT)
           - name: DB_HOST
-            value: ${POSTGRESQL_SERVICE_HOST}
+            value: $(POSTGRESQL_SERVICE_HOST)
           - name: DB_NAME
             value: ${DATABASE_NAME}
           - name: DB_USER
