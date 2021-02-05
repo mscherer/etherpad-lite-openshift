@@ -84,9 +84,9 @@ objects:
           - name: TITLE
             value: ${TITLE}
           - name: SHOW_SETTINGS_IN_ADMIN_PAGE
-            value: False
+            value: 'false'
           - name: TRUST_PROXY
-            value: True
+            value: 'true'
           - name: DB_TYPE
             value: 'postgres'
           - name: DB_PORT
@@ -111,7 +111,7 @@ objects:
             value: ${DEFAULT_PAD_TEXT}
 
           - name: AUTOMATIC_RECONNECTION_TIMEOUT
-            value: 60
+            value: '60'
 
           - name: ADMIN_PASSWORD
             valueFrom:
