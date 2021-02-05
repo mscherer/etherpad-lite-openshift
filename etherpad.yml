@@ -118,7 +118,7 @@ objects:
               secretKeyRef:
                 key: etherpad-lite-admin-password
                 name: ${NAME}
-          image: docker.com/etherpad/etherpad
+          image: docker.io/etherpad/etherpad
           livenessProbe:
             httpGet:
               path: /
